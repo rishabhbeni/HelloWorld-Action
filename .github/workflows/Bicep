@@ -9,7 +9,7 @@ jobs:
  # Log into Azure
  - uses: azure/login@v1
  with:
- creds: ${{ secrets.AZURE_CREDENTIALS }}
+ creds: ${{ secrets.BicepSP }}
  # Deploy Bicep file
  - name: deploy
  uses: azure/arm-deploy@v1
